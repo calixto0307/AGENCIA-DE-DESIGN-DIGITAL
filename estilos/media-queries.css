@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/*media para tablet*/
+@media  screen and (min-width: 768px)  {
+    body{
+        font-size: 16px;
+        display: flex;
+        margin: auto;
+        background-image: url(../imagens/bac.2.jpg);
+        width: 100vw;
+
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+    main{
+        width: 80vw;
+        margin: auto;
+    }
+}
+
+/*media para desktop*/
+@media screen and (min-width: 1280px){
+    body{
+        font-size: 18px;
+    }
+
+    #servicos{
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    gap: 2em;
+}
+    
+}

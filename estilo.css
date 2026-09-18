@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*mobile first*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(imagens/bac.jpg);
+    background-position: 20% ;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    gap: 7px;
+    padding-top: 0.5em;
+}
+#logo img{
+    width: 150px;
+    height: auto;
+}
+
+#burguer{
+    color: #3a3838;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+#burguer:hover{
+    background-color: rgba(248, 244, 244, 0.655);
+    border: 1px solid black;
+    border-radius: 15px;
+
+
+}
+nav{
+    display: none;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: white;
+}
+
+#itens{
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+
+}
+a{
+    color: #3a3838;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 4px;
+    font-weight: bold;
+}
+a:hover{
+    color: white;
+    border-radius: 25px;
+    background-color: #3a3838;;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+main > h1{
+    text-align: center;
+    margin: 1em;
+    padding: 10px;
+    color: #3a3838;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: rgba(248, 244, 244, 0.655);
+
+}
+
+main > section{
+    color: #3a3838;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: rgba(248, 244, 244, 0.655);
+    margin-top: 1em;
+    padding: 1em;
+
+}
+main > #home{
+    align-self: flex-start;
+    padding: 0.5em;
+    font-size: 1.7em;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#servicos{
+    display: grid;
+    grid-template: auto / auto;
+    gap: 2em;
+}
+#servicos > h2{
+    text-align: center;
+
+}
+.serv > p{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5;
+}
+.serv{
+    background-color: whitesmoke;
+
+    border-radius: 15px;
+    padding: 5px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 75%;          /* ocupa toda a largura disponível */
+  padding: 10px;        /* espaço interno */
+  margin-bottom: 15px;  /* espaço entre os campos */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit; /* usa a mesma fonte da página */
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;     /* permite redimensionar só na vertical */
+}
+
+button[type="submit"] {
+  background-color: #3a3838;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #5a5858;
+}
+
+main > section > h2{
+    text-align: center;
+    margin: 0.8em;
+}
+main > section > p{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+

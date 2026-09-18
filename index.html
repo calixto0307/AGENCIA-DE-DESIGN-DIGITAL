@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de design digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="estilo.css" media="all">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img 
+            src="imagens/logo.150.png"
+            srcset="imagens/logo.150.png 150w, imagens/logo.250.png 250w"
+            sizes="(max-width: 600px) 150px, 250px">
+        </div>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav>
+            <ul id="itens">
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#depoimento">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bem-vindo à Nossa Agência</h1>
+        <section id="home">
+        <div>           
+            <p>
+            Transformamos ideias em experiências digitais marcantes.  
+            Nosso diferencial é unir criatividade e inovação para gerar impacto real.
+            </p>
+        </div>
+        </section>
+
+
+
+        <section id="sobre">
+            <h2 s>Sobre nós</h2>
+
+            <p>
+                Criamos experiências digitais que conectam marcas e pessoas.  
+                Nosso propósito é transformar ideias em impacto real, com design moderno e inovação constante.
+            </p>
+        </section>
+
+
+        <section id="servicos">
+            <h2>Nossos<br>Serviços</h2>
+            <div class="serv">
+                  <p>
+                    **Design Gráfico**: criamos identidades visuais modernas e impactantes que fortalecem a presença da sua marca.
+                    </p>
+            </div>
+            <div class="serv">
+                  <p>
+                    **Desenvolvimento Web**: construímos sites responsivos e otimizados para oferecer a melhor experiência digital.
+                </p>
+            </div>
+            <div class="serv">
+                  <p>
+                    **Branding**: desenvolvemos estratégias que conectam sua marca ao público, transmitindo valores e propósito.
+                  </p>
+            </div>
+            <div class="serv">
+                  <p>
+                    **Marketing Digital**: planejamos campanhas criativas que aumentam alcance, engajamento e resultados reais.
+                  </p>
+            </div>
+        </section>
+        <section id="depoimento">
+            <h2>Depoimentos</h2>
+            <p>
+                Nossos clientes são a prova do nosso compromisso: cada projeto entregue gera resultados reais e histórias de sucesso que nos inspiram a ir além.
+            </p>
+
+
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>
+                Quer transformar suas ideias em realidade? Fale conosco e descubra como podemos criar soluções digitais sob medida para você.
+            </p>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <ul style="list-style-type: none; display: flex;">
+                <li><a href="#"><i class="fab fa-facebook"></i></a> Creative Dital|</li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a> Creativ_Digital|</li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a> Creativ.digital</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script>
+        const header = document.querySelector("header");
+        const nav = document.querySelector("nav");
+        function clickMenu(){
+            if(nav.style.display == "flex"){
+                nav.style.display = "none"
+            }
+            else{
+                nav.style.display = "flex"
+             
+            }
+        }
+    </script>
+
+</body>
+</html>
