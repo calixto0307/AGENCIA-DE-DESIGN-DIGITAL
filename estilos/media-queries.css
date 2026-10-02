@@ -2,7 +2,7 @@
 
 /*media para tablet*/
 @media  screen and (min-width: 768px)  {
-    body{
+    .body{
         font-size: 16px;
         display: flex;
         margin: auto;
@@ -10,11 +10,13 @@
         width: 100vw;
 
     }
-    header{
+    .header{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-around;
     }
-    main{
+
+    .main{
         width: 80vw;
         margin: auto;
     }
@@ -22,11 +24,11 @@
 
 /*media para desktop*/
 @media screen and (min-width: 1280px){
-    body{
+    .body{
         font-size: 18px;
     }
 
-    #servicos{
+    .main__section--servicos{
     display: grid;
     grid-template: 1fr 1fr/1fr 1fr;
     gap: 2em;

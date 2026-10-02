@@ -13,29 +13,29 @@
 
 </head>
 
-<body>
-    <header>
-        <div id="logo">
-            <img 
+<body class="body">
+    <header class="header">
+        <div class="header_logo">
+            <img class="header__img"
             src="imagens/logo.150.png"
             srcset="imagens/logo.150.png 150w, imagens/logo.250.png 250w"
             sizes="(max-width: 600px) 150px, 250px">
         </div>
-        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        <nav>
-            <ul id="itens">
-                <li><a href="#sobre">Sobre nós</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#depoimento">Depoimentos</a></li>
-                <li><a href="#contato">Contato</a></li>
+        <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a class="nav__item" href="#sobre">Sobre nós</a></li>
+                <li><a class="nav__item" href="#servicos">Serviços</a></li>
+                <li><a class="nav__item" href="#depoimento">Depoimentos</a></li>
+                <li><a class="nav__item" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Bem-vindo à Nossa Agência</h1>
-        <section id="home">
+    <main class="main">
+        <h1 class="main__h1">Bem-vindo à Nossa Agência</h1>
+        <section class="main__section main__section--home" id="home">
         <div>           
-            <p>
+            <p class="section__p">
             Transformamos ideias em experiências digitais marcantes.  
             Nosso diferencial é unir criatividade e inovação para gerar impacto real.
             </p>
@@ -44,51 +44,51 @@
 
 
 
-        <section id="sobre">
-            <h2 s>Sobre nós</h2>
+        <section class="main__section"  id="sobre">
+            <h2 class="section__titulo">Sobre nós</h2>
 
-            <p>
+            <p class="section__p">
                 Criamos experiências digitais que conectam marcas e pessoas.  
                 Nosso propósito é transformar ideias em impacto real, com design moderno e inovação constante.
             </p>
         </section>
 
 
-        <section id="servicos">
-            <h2>Nossos<br>Serviços</h2>
-            <div class="serv">
-                  <p>
+        <section class="main__section main__section--servicos"  id="servicos">
+            <h2 class="section__titulo section__titulo--serv">Nossos<br>Serviços</h2>
+            <div class="section__div">
+                  <p class="div__p">
                     **Design Gráfico**: criamos identidades visuais modernas e impactantes que fortalecem a presença da sua marca.
                     </p>
             </div>
-            <div class="serv">
-                  <p>
+            <div class="section__div">
+                  <p class="div__p">
                     **Desenvolvimento Web**: construímos sites responsivos e otimizados para oferecer a melhor experiência digital.
                 </p>
             </div>
-            <div class="serv">
-                  <p>
+            <div class="section__div">
+                  <p class="div__p"> 
                     **Branding**: desenvolvemos estratégias que conectam sua marca ao público, transmitindo valores e propósito.
                   </p>
             </div>
-            <div class="serv">
-                  <p>
+            <div class="section__div">
+                  <p class="div__p">
                     **Marketing Digital**: planejamos campanhas criativas que aumentam alcance, engajamento e resultados reais.
                   </p>
             </div>
         </section>
-        <section id="depoimento">
-            <h2>Depoimentos</h2>
-            <p>
+        <section class="main__section"  id="depoimento">
+            <h2 class="section__titulo">Depoimentos</h2>
+            <p class="section__p">
                 Nossos clientes são a prova do nosso compromisso: cada projeto entregue gera resultados reais e histórias de sucesso que nos inspiram a ir além.
             </p>
 
 
         </section>
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>
+        <section class="main__section"  id="contato">
+            <h2 class="section__titulo">Contato</h2>
+            <p class="section__p">
                 Quer transformar suas ideias em realidade? Fale conosco e descubra como podemos criar soluções digitais sob medida para você.
             </p>
             <form action="#" method="post">

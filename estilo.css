@@ -7,10 +7,10 @@
     margin: 0px;
     padding: 0px;
 }
-body{
+.body{
     min-height: 100vh;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 10px;
     color: black;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +23,7 @@ body{
 
 
 }
-header{
+.header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,24 +33,24 @@ header{
     gap: 7px;
     padding-top: 0.5em;
 }
-#logo img{
+.header__img{
     width: 150px;
     height: auto;
 }
 
-#burguer{
+.material-symbols-outlined{
     color: #3a3838;
     font-size: 2.5em;
     cursor: pointer;
 }
-#burguer:hover{
+.header_burguer:hover{
     background-color: rgba(248, 244, 244, 0.655);
     border: 1px solid black;
     border-radius: 15px;
 
 
 }
-nav{
+.nav{
     display: none;
     padding: 1em;
     border: 1px solid white;
@@ -58,7 +58,7 @@ nav{
     background-color: white;
 }
 
-#itens{
+.nav__list{
     list-style-type: none;
     flex-direction: column;
     justify-content: center;
@@ -67,26 +67,25 @@ nav{
     text-align: center;
 
 }
-a{
+.nav__item{
     color: #3a3838;
     text-decoration: none;
     text-transform: uppercase;
     padding: 4px;
     font-weight: bold;
 }
-a:hover{
+.nav__item:hover{
     color: white;
     border-radius: 25px;
     background-color: #3a3838;;
 }
-
-main{
+.main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
 }
-main > h1{
+.main__h1{
     text-align: center;
     margin: 1em;
     padding: 10px;
@@ -97,7 +96,7 @@ main > h1{
 
 }
 
-main > section{
+.main__section{
     color: #3a3838;
     border-radius: 10px;
     justify-content: center;
@@ -106,7 +105,7 @@ main > section{
     padding: 1em;
 
 }
-main > #home{
+.main__section--home{
     align-self: flex-start;
     padding: 0.5em;
     font-size: 1.7em;
@@ -114,27 +113,26 @@ main > #home{
     font-weight: bold;
     border-radius: 10px;
 }
-#servicos{
+.main__section--servicos{
     display: grid;
     grid-template: auto / auto;
     gap: 2em;
 }
-#servicos > h2{
+.section__titulo--serv{
     text-align: center;
-
 }
-.serv > p{
+.section__div{
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 5px;
+}
+.div__p{
     color: black;
     text-align: center;
     font-weight: bold;
     padding: 0.5;
 }
-.serv{
-    background-color: whitesmoke;
 
-    border-radius: 15px;
-    padding: 5px;
-}
 input[type="text"],
 input[type="email"],
 textarea {
@@ -166,11 +164,11 @@ button[type="submit"]:hover {
   background-color: #5a5858;
 }
 
-main > section > h2{
+.section__titulo{
     text-align: center;
     margin: 0.8em;
 }
-main > section > p{
+.section__p{
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
