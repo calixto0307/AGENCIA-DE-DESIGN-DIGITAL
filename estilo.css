@@ -43,7 +43,7 @@
     font-size: 2.5em;
     cursor: pointer;
 }
-.header_burguer:hover{
+.material-symbols-outlined:hover{
     background-color: rgba(248, 244, 244, 0.655);
     border: 1px solid black;
     border-radius: 15px;
@@ -83,7 +83,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: auto;
     height: 100vh;
+    width: 90%;
 }
 .main__h1{
     text-align: center;
@@ -96,16 +98,19 @@
 
 }
 
-.main__section{
+.section{
     color: #3a3838;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: rgba(248, 244, 244, 0.655);
     margin-top: 1em;
     padding: 1em;
 
 }
-.main__section--home{
+.section--home{
     align-self: flex-start;
     padding: 0.5em;
     font-size: 1.7em;
@@ -113,43 +118,62 @@
     font-weight: bold;
     border-radius: 10px;
 }
-.main__section--servicos{
+.section--servicos{
     display: grid;
-    grid-template: auto / auto;
-    gap: 2em;
+    gap: 1em;
 }
-.section__titulo--serv{
-    text-align: center;
+.section--wide{
+    align-self: center;
+    width: 80%;
 }
-.section__div{
+
+.servicos__item{
     background-color: whitesmoke;
     border-radius: 15px;
     padding: 5px;
 }
-.div__p{
+.section__title{
+    text-align: center;
+    margin: 0.8em;
+}
+
+.section__text{
     color: black;
     text-align: center;
     font-weight: bold;
     padding: 0.5;
+    font-size: 1em;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 75%;          /* ocupa toda a largura disponível */
-  padding: 10px;        /* espaço interno */
-  margin-bottom: 15px;  /* espaço entre os campos */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+.form__label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  align-self: flex-start;
+}
+
+.form__input,
+.form__textarea {
+  width: 75%;
+  padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-family: inherit; /* usa a mesma fonte da página */
+  font-family: inherit;
   font-size: 1em;
 }
 
-textarea {
-  resize: vertical;     /* permite redimensionar só na vertical */
+.form__textarea {
+  resize: vertical;
 }
 
-button[type="submit"] {
+.form__button {
   background-color: #3a3838;
   color: white;
   padding: 10px 20px;
@@ -160,18 +184,17 @@ button[type="submit"] {
   transition: background 0.3s;
 }
 
-button[type="submit"]:hover {
-  background-color: #5a5858;
+.form__button:hover {
+  background-color: #5a5858
 }
-
-.section__titulo{
-    text-align: center;
-    margin: 0.8em;
+.section__lista-contato {
+  list-style: none;
+  display: flex;
+  gap: 1em;
 }
-.section__p{
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
+.section__item-contato{
+    font-size: 7px;
+    cursor: pointer;
 }
 
 

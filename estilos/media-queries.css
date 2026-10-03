@@ -27,11 +27,9 @@
     .body{
         font-size: 18px;
     }
+    .main{
+        width: 70%;
+    }
 
-    .main__section--servicos{
-    display: grid;
-    grid-template: 1fr 1fr/1fr 1fr;
-    gap: 2em;
 }
     
-}

@@ -15,12 +15,10 @@
 
 <body class="body">
     <header class="header">
-        <div class="header_logo">
             <img class="header__img"
             src="imagens/logo.150.png"
             srcset="imagens/logo.150.png 150w, imagens/logo.250.png 250w"
             sizes="(max-width: 600px) 150px, 250px">
-        </div>
         <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <nav class="nav">
             <ul class="nav__list">
@@ -33,81 +31,79 @@
     </header>
     <main class="main">
         <h1 class="main__h1">Bem-vindo à Nossa Agência</h1>
-        <section class="main__section main__section--home" id="home">
-        <div>           
-            <p class="section__p">
+        <section class="section section--home" id="home">
+            <p class="section__text">
             Transformamos ideias em experiências digitais marcantes.  
             Nosso diferencial é unir criatividade e inovação para gerar impacto real.
             </p>
-        </div>
         </section>
 
 
 
-        <section class="main__section"  id="sobre">
-            <h2 class="section__titulo">Sobre nós</h2>
+        <section class="section"  id="sobre">
+            <h2 class="section__title">Sobre nós</h2>
 
-            <p class="section__p">
+            <p class="section__text">
                 Criamos experiências digitais que conectam marcas e pessoas.  
                 Nosso propósito é transformar ideias em impacto real, com design moderno e inovação constante.
             </p>
         </section>
 
 
-        <section class="main__section main__section--servicos"  id="servicos">
-            <h2 class="section__titulo section__titulo--serv">Nossos<br>Serviços</h2>
-            <div class="section__div">
-                  <p class="div__p">
-                    **Design Gráfico**: criamos identidades visuais modernas e impactantes que fortalecem a presença da sua marca.
+        <section class="section section--servicos"  id="servicos">
+            <h2 class="section__title ">Nossos<br>Serviços</h2>
+            <div class="servicos__item">
+                  <p class="section__text">
+                    Design Gráfico: criamos identidades visuais modernas e impactantes que fortalecem a presença da sua marca.
                     </p>
             </div>
-            <div class="section__div">
-                  <p class="div__p">
-                    **Desenvolvimento Web**: construímos sites responsivos e otimizados para oferecer a melhor experiência digital.
+            <div class="servicos__item">
+                  <p class="section__text">
+                    Desenvolvimento Web: construímos sites responsivos e otimizados para oferecer a melhor experiência digital.
                 </p>
             </div>
-            <div class="section__div">
-                  <p class="div__p"> 
-                    **Branding**: desenvolvemos estratégias que conectam sua marca ao público, transmitindo valores e propósito.
+            <div class="servicos__item">
+                  <p class="section__text"> 
+                    Branding: desenvolvemos estratégias que conectam sua marca ao público, transmitindo valores e propósito.
                   </p>
             </div>
-            <div class="section__div">
-                  <p class="div__p">
-                    **Marketing Digital**: planejamos campanhas criativas que aumentam alcance, engajamento e resultados reais.
+            <div class="servicos__item">
+                  <p class="section__text">
+                    Marketing Digital: planejamos campanhas criativas que aumentam alcance, engajamento e resultados reais.
                   </p>
             </div>
         </section>
-        <section class="main__section"  id="depoimento">
-            <h2 class="section__titulo">Depoimentos</h2>
-            <p class="section__p">
+        <section class="section"  id="depoimento">
+            <h2 class="section__title">Depoimentos</h2>
+            <p class="section__text">
                 Nossos clientes são a prova do nosso compromisso: cada projeto entregue gera resultados reais e histórias de sucesso que nos inspiram a ir além.
             </p>
 
 
         </section>
 
-        <section class="main__section"  id="contato">
-            <h2 class="section__titulo">Contato</h2>
-            <p class="section__p">
+        <section class="section section--wide"  id="contato">
+            <h2 class="section__title">Contato</h2>
+            <p class="section__text">
                 Quer transformar suas ideias em realidade? Fale conosco e descubra como podemos criar soluções digitais sob medida para você.
             </p>
-            <form action="#" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br>
+            <form class="form" action="#" method="post">
+                <label class="form__label" for="nome">Nome:</label>
+                <input class="form__input" type="text" id="nome" name="nome" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
+                <label class="form__label" for="email">Email:</label>
+                <input class="form__input" type="email" id="email" name="email" required>
 
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                <label class="form__label" for="mensagem">Mensagem:</label>
+                <textarea class="form__textarea" id="mensagem" name="mensagem" rows="5" required></textarea>
 
-                <button type="submit">Enviar</button>
+                <button class="form__button" type="submit">Enviar</button>
             </form>
 
-            <ul style="list-style-type: none; display: flex;">
-                <li><a href="#"><i class="fab fa-facebook"></i></a> Creative Dital|</li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a> Creativ_Digital|</li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a> Creativ.digital</li>
+            <ul class="section__lista-contato">
+                <li class="section__item-contato"><a href="#"><i class="fab fa-facebook"></i></a> Creative Digital|</li>
+                <li class="section__item-contato"><a href="#"><i class="fab fa-instagram"></i></a> Creativ_Digital|</li>
+                <li class="section__item-contato"><a href="#"><i class="fab fa-linkedin"></i></a> Creativ.digital</li>
             </ul>
         </section>
 
