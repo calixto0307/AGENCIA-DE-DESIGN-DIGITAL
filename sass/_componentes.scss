@@ -1,0 +1,42 @@
+@use'mixins';
+
+.nav{
+    display: none;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: white;
+
+    &__list{ 
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    &__item{
+        color: #3a3838;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 4px;
+        font-weight: bold;
+        &:hover{
+            color: white;
+            border-radius: 25px;
+            background-color: #3a3838;;
+        }
+    }
+
+
+
+}
+.servicos{
+    &__item{
+        background-color: rgba(199, 194, 194, 0.32);
+        border-radius: 15px;
+        padding: 10px;
+    }
+}

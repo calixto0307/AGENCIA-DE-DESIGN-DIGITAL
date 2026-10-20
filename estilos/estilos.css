@@ -1,0 +1,178 @@
+.nav {
+  display: none;
+  padding: 1em;
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: white;
+}
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.nav__item {
+  color: #3a3838;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 4px;
+  font-weight: bold;
+}
+.nav__item:hover {
+  color: white;
+  border-radius: 25px;
+  background-color: #3a3838;
+}
+
+.servicos__item {
+  background-color: rgba(199, 194, 194, 0.32);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 7px;
+  padding-top: 0.5em;
+}
+.header__img {
+  width: 150px;
+  height: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+  width: 90%;
+}
+.main__h1 {
+  text-align: center;
+  margin: 1em;
+  padding: 10px;
+  color: #3a3838;
+  border-radius: 10px;
+  background-color: rgba(248, 244, 244, 0.655);
+}
+
+.section {
+  color: #3a3838;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(248, 244, 244, 0.655);
+  margin-top: 1em;
+  padding: 1em;
+}
+.section__title {
+  text-align: center;
+  margin: 0.8em;
+}
+.section__text {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5em;
+  font-size: 1em;
+}
+.section--home {
+  align-self: flex-start;
+  padding: 0.5em;
+  font-size: 1.7em;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.section--servicos {
+  display: grid;
+  gap: 1em;
+}
+.section--servicos__item {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  padding: 5px;
+}
+.section--wide {
+  align-self: center;
+  width: 80%;
+}
+.section__lista-contato {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+.section__item-contato {
+  font-size: 7px;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.form__label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  align-self: flex-start;
+}
+.form__input, .form__textarea {
+  width: 75%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1em;
+}
+.form__textarea {
+  resize: vertical;
+}
+.form__button {
+  background-color: #3a3838;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.form__button:hover {
+  background-color: rgb(38.008255934%, 36.697626419%, 36.697626419%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imagens/bac.jpg);
+  background-position: 20%;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=estilos.css.map */
